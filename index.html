@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="js/font-awesome/css/font-awesome.min.css?1">
+    <link rel="stylesheet" href="js/jQuery-Validation-Engine-master/css/validationEngine.jquery.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="contenttop" id="index">
+            <div class="nav">
+                <div class="top">
+                    <div class="left">
+                        <a href="index.html">
+                            <img src="img/logo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="right">
+                        <h2>0800-000-070</h2>
+                        <p>周一到周日 9:00-18:00</p>
+                    </div>
+                </div>
+                <div class="bottom row no-gutters align-items-center">
+                    <ul class="list-inline">
+                        <li><a href="product.html" data-title="商品專區"><span>PRODUCT</span></a></li>
+                        <li><a href="new.html" data-title="最新消息"><span>NEWS</span></a></li>
+                        <li><a href="technology.html" data-title="美妝分享"><span>BEAUTY</span></a></li>
+                        <li><a href="information.html" data-title="門市位置"><span>STORE</span></a></li>
+                        <li><a href="contact.html" data-title="聯絡我們"><span>CONTACT</span></a></li>
+                    </ul>
+                    <div class="h-btn">
+                        <a href="member_login.html" title="會員專區" class="tip" data-title=""><i class="fa fa-user-o" aria-hidden="true"></i></a>
+                        <a href="faq.html" title="購物常見問題" class="btn-qa tip" data-title=""><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                        <a href="javascript:;" title="搜尋" class="btn-search" id="searchBtn" data-title=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="searchObj" class="search-result-bg">
+                <div class="search-result">
+                    <div class="to-fade show">
+                        <form action="product_search.html">
+                            <a class="s-close"><span></span></a>
+                            <div class="s-wrap">
+                                <input type="text" class="s-input" placeholder="SEARCH">
+                                <button class="s-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                        <div class="tags">
+                            <p class="s-title">看看其他人都找了甚麼</p>
+                            <a href="product.html" title="">眼影盤</a>
+                            <a href="product.html" title="">腮紅</a>
+                            <a href="product.html" title="">Mistine</a>
+                            <a href="product.html" title="">眼線筆</a>
+                            <a href="product.html" title="">MALISSA KISS</a>
+                            <a href="product.html" title="">Goldberry</a>
+                            <a href="product.html" title="">口紅</a>
+                            <a href="product.html" title="">美髮保養</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <a href="javascript:;" title="最近瀏覽商品" id="browseProductBtn" class="btn-recent tip" data-title=""><i class="fa fa-clock-o" aria-hidden="true"></i></a>
+                <a href="javascript:;" title="購物清單" id="productListBtn" class="btn-cart tip" data-title=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                <a href="#wrapper" title="回頂層" class="scrollUp tip" data-title=""><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+            </div>
+            <div id="productListObj" class="side-area-bg">
+                <div id="sideArea" class="side-area">
+                    <a href="javascript:;" class="side-close"><span></span></a>
+                    <div id="recent_list" class="side-main" style="display: block;">
+                        <div class="title">最近瀏覽商品</div>
+                        <ul class="reset list">
+                            <li>
+                                <div class="pic">
+                                    <a href="product_view.html" title=""><img src="img/p01.jpg" alt=""></a>
+                                </div>
+                                <div class="content">
+                                    <div class="column box-name">
+                                        <a href="product_view.html" title="">
+                                            <p class="en">Mistine - Groove complete</p>
+                                            <p class="tit">12色完美眼彩盤</p>
+                                        </a>
+                                        <p class="sale">泰國必買</p>
+                                    </div>
+                                    <div class="column price">
+                                        <span class="p-before">NT$429</span><i class="line">|</i><span class="p-after">NT$429</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="product_view.html" title=""><img src="img/p02.jpg" alt=""></a>
+                                </div>
+                                <div class="content">
+                                    <div class="column box-name">
+                                        <a href="product_view.html" title="">
+                                            <p class="en">Mistine - Maya air Crusion </p>
+                                            <p class="tit">水感粉底霜</p>
+                                        </a>
+                                        <p class="sale">泰國必買</p>
+                                    </div>
+                                    <div class="column price">
+                                        <span class="p-before">NT$429</span><i class="line">|</i><span class="p-after">NT$429</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="product_view.html" title=""><img src="img/p03.jpg" alt=""></a>
+                                </div>
+                                <div class="content">
+                                    <div class="column box-name">
+                                        <a href="product_view.html" title="">
+                                            <p class="en">Mistine - Groove complete</p>
+                                            <p class="tit">12色完美眼彩盤</p>
+                                        </a>
+                                        <p class="sale">泰國必買</p>
+                                    </div>
+                                    <div class="column price">
+                                        <span class="p-before">NT$429</span><i class="line">|</i><span class="p-after">NT$429</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="product_view.html" title=""><img src="img/p04.jpg" alt=""></a>
+                                </div>
+                                <div class="content">
+                                    <div class="column box-name">
+                                        <a href="product_view.html" title="">
+                                            <p class="en">Mistine - Maya air Crusion </p>
+                                            <p class="tit">水感粉底霜</p>
+                                        </a>
+                                        <p class="sale">泰國必買</p>
+                                    </div>
+                                    <div class="column price">
+                                        <span class="p-before">NT$429</span><i class="line">|</i><span class="p-after">NT$429</span>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 購物清單 -->
+                    <div id="cart_list" class="side-main">
+                        <div class="title">購物清單</div>
+                        <!-- <div class="table-no-data"><i class="fa fa-info-circle" aria-hidden="true"></i>目前查無符合資訊</div> -->
+                        <ul class="reset list cart-list">
+                            <li>
+                                <label class="check">
+                        <input type="checkbox">
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                    </label>
+                                <div class="pic">
+                                    <a href="product_view.html" title=""><img src="img/p01.jpg" alt=""></a>
+                                </div>
+                                <div class="content">
+                                    <div class="column box-name">
+                                        <a href="product_view.html" title="">
+                                            <p class="en">Mistine - Groove complete</p>
+                                            <p class="tit">12色完美眼彩盤</p>
+                                        </a>
+                                        <div class="color">no2珊瑚橘</div>
+                                        <div class="match">
+                                            <p class="t">符合活動</p>
+                                            <a href="product_discount_list.html" title="" class="sale">Mistine周年慶全館85折<p></p>
+                                </a></div>
+                                        <a href="product_discount_list.html" title="" class="sale">
+                                        </a>
+                                    </div>
+                                    <div class="column price">
+                                        <a href="product_discount_list.html" title="" class="sale">
+                                        </a>
+                                        <div class="qty-wrap">
+                                            <a href="product_discount_list.html" title="" class="sale"></a>
+                                            <a href="javascript:;" title="增加數量" class="qty-minus link"><span>-</span></a>
+                                            <input type="text" name="" value="1" data-min="1" data-max="15">
+                                            <a href="javascript:;" title="減少數量" class="qty-plus link"><span>+</span></a>
+                                        </div>
+                                        <div class="right">
+                                            <span class="p-after">NT$429</span></div>
+                                    </div>
+                                    <div class="column option"><a href="" title="刪除" class="delete"><span></span>刪除</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="check">
+                        <input type="checkbox">
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                    </label>
+                                <div class="pic">
+                                    <a href="product_view.html" title=""><img src="img/p02.jpg" alt=""></a>
+                                </div>
+                                <div class="content">
+                                    <div class="column box-name">
+                                        <a href="product_view.html" title="">
+                                            <p class="en">Mistine - Maya air Crusion </p>
+                                            <p class="tit">水感粉底霜</p>
+                                        </a>
+                                        <div class="color">no2珊瑚橘</div>
+                                        <div class="match">
+                                            <p class="t">符合活動</p>
+                                            <a href="product_discount_list.html" title="" class="sale">
+                                                <p>Mistine周年慶全館85折</p>
+                                            </a>
+                                        </div>
+                                        <a href="product_discount_list.html" title="" class="sale">
+                                        </a>
+                                    </div>
+                                    <div class="column price">
+                                        <a href="product_discount_list.html" title="" class="sale">
+                                        </a>
+                                        <div class="qty-wrap">
+                                            <a href="product_discount_list.html" title="" class="sale">
+                                            </a><a href="javascript:;" title="增加數量" class="qty-minus link"><span>-</span></a>
+                                            <input type="text" name="" value="1" data-min="1" data-max="15">
+                                            <a href="javascript:;" title="減少數量" class="qty-plus link"><span>+</span></a>
+                                        </div>
+                                        <div class="right">
+                                            <span class="p-after">NT$429</span></div>
+                                    </div>
+                                    <div class="column option"><a href="" title="刪除" class="delete"><span></span>刪除</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="check">
+                        <input type="checkbox">
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                    </label>
+                                <div class="pic">
+                                    <a href="product_view.html" title=""><img src="img/p03.jpg" alt=""></a>
+                                </div>
+                                <div class="content">
+                                    <div class="column box-name">
+                                        <a href="product_view.html" title="">
+                                            <p class="en">Mistine - Groove complete</p>
+                                            <p class="tit">12色完美眼彩盤</p>
+                                        </a>
+                                        <div class="color">no2珊瑚橘</div>
+                                        <div class="match">
+                                            <p class="t">符合活動</p>
+                                            <a href="product_discount_list.html" title="" class="sale">Mistine周年慶全館85折</a>
+                                        </div>
+                                        <a href="product_discount_list.html" title="" class="sale"></a>
+                                    </div>
+                                    <div class="column price">
+                                        <a href="product_discount_list.html" title="" class="sale">
+                                        </a>
+                                        <div class="qty-wrap">
+                                            <a href="product_discount_list.html" title="" class="sale">
+                                            </a><a href="javascript:;" title="增加數量" class="qty-minus link"><span>-</span></a>
+                                            <input type="text" name="" value="1" data-min="1" data-max="15">
+                                            <a href="javascript:;" title="減少數量" class="qty-plus link"><span>+</span></a>
+                                        </div>
+                                        <div class="right">
+                                            <span class="p-after">NT$429</span></div>
+                                    </div>
+                                    <div class="column option"><a href="" title="刪除" class="delete"><span></span>刪除</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="check">
+                        <input type="checkbox">
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                    </label>
+                                <div class="pic">
+                                    <a href="product_view.html" title=""><img src="img/p04.jpg" alt=""></a>
+                                </div>
+                                <div class="content">
+                                    <div class="column box-name">
+                                        <a href="product_view.html" title="">
+                                            <p class="en">Mistine - Maya air Crusion </p>
+                                            <p class="tit">水感粉底霜</p>
+                                        </a>
+                                        <div class="color">no2珊瑚橘</div>
+                                        <div class="match">
+                                            <p class="t">符合活動</p>
+                                            <a href="product_discount_list.html" title="" class="sale">Mistine周年慶全館85折</a>
+                                        </div>
+                                        <a href="product_discount_list.html" title="" class="sale">
+                                        </a>
+                                    </div>
+                                    <div class="column price">
+                                        <a href="product_discount_list.html" title="" class="sale">
+                                        </a>
+                                        <div class="qty-wrap">
+                                            <a href="product_discount_list.html" title="" class="sale">
+                                            </a><a href="javascript:;" title="增加數量" class="qty-minus link"><span>-</span></a>
+                                            <!-- 可選數量的最小值&最大值 -->
+                                            <input type="text" name="" value="1" data-min="1" data-max="15">
+                                            <a href="javascript:;" title="減少數量" class="qty-plus link"><span>+</span></a>
+                                        </div>
+                                        <div class="right">
+                                            <span class="p-after">NT$429</span></div>
+                                    </div>
+                                    <div class="column option"><a href="" title="刪除" class="delete"><span></span>刪除</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="total">
+                            <p>訂單總金額</p>
+                            <p class="num">NT$1234</p>
+                        </div>
+                        <div class="buttons">
+                            <a href="" class="btns white-btn" title="加入追蹤清單"><span>加入追蹤清單</span></a>
+                            <a href="flow_cart.html" class="btns" title="我要結帳"><span>我要結帳</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <div id="slideshow" style="height: 327px;">
+                    <ul style="transform: translateX(-200%);">
+                        <li style="left: 0%;">
+                            <img src="./img/ban1.jpg" alt="">
+                        </li>
+                        <li style="left: 100%;">
+                            <img src="./img/ban2.jpg" alt="">
+                        </li>
+                        <li style="left: 200%;">
+                            <img src="./img/ban1.jpg" alt="">
+                        </li>
+                    </ul>
+                    <div class="dotdiv">
+                        <div class="prev"></div>
+                        <div class="next"></div>
+                        <div class="dotOut"><span class="dot"></span><span class="dot"></span><span class="dot active"></span></div>
+                    </div>
+                </div>
+                <div class="headerbottom row no-gutter" id="headNew">
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="./img/kwankao1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="./img/kwankao2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <img src="./img/kwankao3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="newProducts">
+                    <h2 class="title">#NEW ARRIVAL</h2>
+                    <div class="row scrollTop">
+                        <div class="col-sm-6">
+                            <img class="box" src="./img/in01.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="box goods">
+                                        <div class="img">
+                                            <a href="product_view.html" title=""><img class="lazy" src="img/p01.jpg" alt="" style="display: inline;"></a>
+                                        </div>
+                                        <div class="info">
+                                            <a href="product_view.html" title="">
+                                                <div class="en">Mistine - Groove complete</div>
+                                                <h3 class="tit">12色完美眼彩盤</h3>
+                                            </a>
+                                            <a href="product_list.html" title="" class="sale">泰國必買</a>
+                                            <div class="price"><span class="p-before">NT$429</span><i class="line">/</i><span class="p-after">NT$429</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="box goods">
+                                        <div class="img">
+                                            <a href="product_view.html" title=""><img class="lazy" src="img/p02.jpg" alt="" style="display: inline;"></a>
+                                        </div>
+                                        <div class="info">
+                                            <a href="product_view.html" title="">
+                                                <div class="en">Mistine - Groove complete</div>
+                                                <h3 class="tit">12色完美眼彩盤</h3>
+                                            </a>
+                                            <a href="product_list.html" title="" class="sale">泰國必買</a>
+                                            <div class="price"><span class="p-before">NT$429</span><i class="line">/</i><span class="p-after">NT$429</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="box goods">
+                                        <div class="img">
+                                            <a href="product_view.html" title=""><img class="lazy" src="img/p03.jpg" alt="" style="display: inline;"></a>
+                                        </div>
+                                        <div class="info">
+                                            <a href="product_view.html" title="">
+                                                <div class="en">Mistine - Groove complete</div>
+                                                <h3 class="tit">12色完美眼彩盤</h3>
+                                            </a>
+                                            <a href="product_list.html" title="" class="sale">泰國必買</a>
+                                            <div class="price"><span class="p-before">NT$429</span><i class="line">/</i><span class="p-after">NT$429</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="box goods">
+                                        <div class="img">
+                                            <a href="product_view.html" title=""><img class="lazy" src="img/p05.jpg" alt="" style="display: inline;"></a>
+                                        </div>
+                                        <div class="info">
+                                            <a href="product_view.html" title="">
+                                                <div class="en">Mistine - Groove complete</div>
+                                                <h3 class="tit">12色完美眼彩盤</h3>
+                                            </a>
+                                            <a href="product_list.html" title="" class="sale">泰國必買</a>
+                                            <div class="price"><span class="p-before">NT$429</span><i class="line">/</i><span class="p-after">NT$429</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="box goods">
+                                <div class="img">
+                                    <a href="product_view.html" title=""><img class="lazy" src="img/p04.jpg" alt="" style="display: inline;"></a>
+                                </div>
+                                <div class="info">
+                                    <a href="product_view.html" title="">
+                                        <div class="en">Mistine - Groove complete</div>
+                                        <h3 class="tit">12色完美眼彩盤</h3>
+                                    </a>
+                                    <a href="product_list.html" title="" class="sale">泰國必買</a>
+                                    <div class="price"><span class="p-before">NT$429</span><i class="line">/</i><span class="p-after">NT$429</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="box goods">
+                                <div class="img">
+                                    <a href="product_view.html" title=""><img class="lazy" src="img/p01.jpg" alt="" style="display: inline;"></a>
+                                </div>
+                                <div class="info">
+                                    <a href="product_view.html" title="">
+                                        <div class="en">Mistine - Groove complete</div>
+                                        <h3 class="tit">12色完美眼彩盤</h3>
+                                    </a>
+                                    <a href="product_list.html" title="" class="sale">泰國必買</a>
+                                    <div class="price"><span class="p-before">NT$429</span><i class="line">/</i><span class="p-after">NT$429</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="box goods">
+                                <div class="img">
+                                    <a href="product_view.html" title=""><img class="lazy" src="img/p02.jpg" alt="" style="display: inline;"></a>
+                                </div>
+                                <div class="info">
+                                    <a href="product_view.html" title="">
+                                        <div class="en">Mistine - Groove complete</div>
+                                        <h3 class="tit">12色完美眼彩盤</h3>
+                                    </a>
+                                    <a href="product_list.html" title="" class="sale">泰國必買</a>
+                                    <div class="price"><span class="p-before">NT$429</span><i class="line">/</i><span class="p-after">NT$429</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="box goods">
+                                <div class="img">
+                                    <a href="product_view.html" title=""><img class="lazy" src="img/p03.jpg" alt="" style="display: inline;"></a>
+                                </div>
+                                <div class="info">
+                                    <a href="product_view.html" title="">
+                                        <div class="en">Mistine - Groove complete</div>
+                                        <h3 class="tit">12色完美眼彩盤</h3>
+                                    </a>
+                                    <a href="product_list.html" title="" class="sale">泰國必買</a>
+                                    <div class="price"><span class="p-before">NT$429</span><i class="line">/</i><span class="p-after">NT$429</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newNew">
+                    <h2 class="title">#LATEST NEWS</h2>
+                    <div class="scrollTop">
+                        <div id="slideshow02" class="slick_slide" style="height: 416px;">
+                            <ul style="width: 8050px;">
+                                <li style="width: 805px;">
+                                    <a href="new_view.html" title="" tabindex="0">
+                                        <div class="img"><img src="img/n01.jpg" alt=""></div>
+                                        <div class="info">
+                                            <div class="date">
+                                                <div class="num">17</div>
+                                                <div class="month">APR</div>
+                                                <div class="year">2017</div>
+                                            </div>
+                                            <div class="text">開架底妝百百款 教妳怎麼聰明挑才能買對不失手！</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="active" style="width: 805px;">
+                                    <a href="new_view.html" title="" tabindex="0">
+                                        <div class="img"><img src="img/n02.jpg" alt=""></div>
+                                        <div class="info">
+                                            <div class="date">
+                                                <div class="num">17</div>
+                                                <div class="month">APR</div>
+                                                <div class="year">2017</div>
+                                            </div>
+                                            <div class="text">開架底妝百百款 教妳怎麼聰明挑才能買對不失手！</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="" style="width: 805px;">
+                                    <a href="new_view.html" title="" tabindex="0">
+                                        <div class="img"><img src="img/n03.jpg" alt=""></div>
+                                        <div class="info">
+                                            <div class="date">
+                                                <div class="num">17</div>
+                                                <div class="month">APR</div>
+                                                <div class="year">2017</div>
+                                            </div>
+                                            <div class="text">開架底妝百百款 教妳怎麼聰明挑才能買對不失手！</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li style="width: 805px;">
+                                    <a href="new_view.html" title="" tabindex="0">
+                                        <div class="img"><img src="img/n04.jpg" alt=""></div>
+                                        <div class="info">
+                                            <div class="date">
+                                                <div class="num">17</div>
+                                                <div class="month">APR</div>
+                                                <div class="year">2017</div>
+                                            </div>
+                                            <div class="text">開架底妝百百款 教妳怎麼聰明挑才能買對不失手！</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li style="width: 805px;">
+                                    <a href="new_view.html" title="" tabindex="0">
+                                        <div class="img"><img src="img/n05.jpg" alt=""></div>
+                                        <div class="info">
+                                            <div class="date">
+                                                <div class="num">17</div>
+                                                <div class="month">APR</div>
+                                                <div class="year">2017</div>
+                                            </div>
+                                            <div class="text">開架底妝百百款 教妳怎麼聰明挑才能買對不失手！</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li style="width: 805px;">
+                                    <a href="new_view.html" title="" tabindex="0">
+                                        <div class="img"><img src="img/n01.jpg" alt=""></div>
+                                        <div class="info">
+                                            <div class="date">
+                                                <div class="num">17</div>
+                                                <div class="month">APR</div>
+                                                <div class="year">2017</div>
+                                            </div>
+                                            <div class="text">開架底妝百百款 教妳怎麼聰明挑才能買對不失手！</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li style="width: 805px;">
+                                    <a href="new_view.html" title="" tabindex="0">
+                                        <div class="img"><img src="img/n02.jpg" alt=""></div>
+                                        <div class="info">
+                                            <div class="date">
+                                                <div class="num">17</div>
+                                                <div class="month">APR</div>
+                                                <div class="year">2017</div>
+                                            </div>
+                                            <div class="text">開架底妝百百款 教妳怎麼聰明挑才能買對不失手！</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li style="width: 805px;">
+                                    <a href="new_view.html" title="" tabindex="0">
+                                        <div class="img"><img src="img/n03.jpg" alt=""></div>
+                                        <div class="info">
+                                            <div class="date">
+                                                <div class="num">17</div>
+                                                <div class="month">APR</div>
+                                                <div class="year">2017</div>
+                                            </div>
+                                            <div class="text">開架底妝百百款 教妳怎麼聰明挑才能買對不失手！</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li style="width: 805px;">
+                                    <a href="new_view.html" title="" tabindex="0">
+                                        <div class="img"><img src="img/n04.jpg" alt=""></div>
+                                        <div class="info">
+                                            <div class="date">
+                                                <div class="num">17</div>
+                                                <div class="month">APR</div>
+                                                <div class="year">2017</div>
+                                            </div>
+                                            <div class="text">開架底妝百百款 教妳怎麼聰明挑才能買對不失手！</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li style="width: 805px;">
+                                    <a href="new_view.html" title="" tabindex="0">
+                                        <div class="img"><img src="img/n05.jpg" alt=""></div>
+                                        <div class="info">
+                                            <div class="date">
+                                                <div class="num">17</div>
+                                                <div class="month">APR</div>
+                                                <div class="year">2017</div>
+                                            </div>
+                                            <div class="text">開架底妝百百款 教妳怎麼聰明挑才能買對不失手！</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="control previous" style="margin-left: -382.5px;"></div>
+                            <div class="control next" style="margin-right: -382.5px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row no-gutters">
+                <div class="left col-md-8">
+                    <p>POWERERMF BY <span>OPENCADS</span> JKLFJ @ 2017
+                    </p>
+                </div>
+                <div class="right col-md-4">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">
+                                <p><i class="fa fa-facebook"></i>twitter</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p><i class="fa fa-twitter"></i>facebook</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+
+</html>
